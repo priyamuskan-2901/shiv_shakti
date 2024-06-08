@@ -1,0 +1,154 @@
+.section {
+  height: calc(100vh - 61px);
+  overflow: hidden; /* Ensure the section hides overflow during transitions */
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  height: 100%;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out; /* Smooth transition for background image */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.content {
+  max-width: 50%;
+  text-align: center; /* Center align text */
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.exploreButton {
+  background-color: #49170E;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.exploreButton:hover {
+  background-color: #49170E;
+}
+
+.imageContainer {
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Ensure relative positioning for absolute next slide image */
+  overflow: hidden; /* Hide overflow to ensure smooth sliding effect */
+}
+
+.chickenImage {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.slideIn {
+  animation: slideIn 1s ease-in-out; /* Smooth sliding transition for the smaller image */
+}
+
+.nextSlideImage {
+  position: absolute;
+  top: 0;
+  left: 100%; /* Initially position out of view */
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: slideInNext 1s ease-in-out forwards; /* Animation for next slide image */
+}
+
+@keyframes slideInNext {
+  from {
+    left: 100%; /* Start position */
+    opacity: 0;
+  }
+  to {
+    left: 0; /* End position */
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .imageContainer {
+    max-width: 100%; /* Take full width on smaller screens */
+    order: -1; /* Move image container above content in column layout */
+    margin-bottom: 10px; /* Add spacing between images and text */
+  }
+
+  .chickenImage {
+    max-width: 60%; 
+   /* Adjust image size for better proportion */
+    margin-bottom: 10px; /* Add spacing between images and text */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .chickenImage {
+    max-width: 70%; 
+   /* Adjust image size for better proportion */
+    margin-bottom: 20px; /* Add spacing between images and text */
+  }
+
+  .exploreButton {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}

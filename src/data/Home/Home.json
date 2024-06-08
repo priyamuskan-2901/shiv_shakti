@@ -1,0 +1,32 @@
+[
+  {
+    "backgroundImage": "../../../assets/Home/BG-01.png",
+    "title": "SHIV SHAKTI HATCHERIES",
+    "details": "Lorem ipsum dolor sit amet consectetur. Id sodales etiam nibh tincidunt. Mattis at pharetra viverra scelerisque sed neque facilisi non. Pellentesque.",
+    "smallImage": "../../../assets/Home/SI-01.png"
+  },
+  {
+    "backgroundImage": "../../../assets/Home/BG-02.png",
+    "title": "OM SHIV FARMS",
+    "details": "Lorem ipsum dolor sit amet consectetur. Id sodales etiam nibh tincidunt. Mattis at pharetra viverra scelerisque sed neque facilisi non. Pellentesque.",
+    "smallImage": "../../../assets/Home/SI-02.png"
+  },
+  {
+    "backgroundImage": "../../../assets/Home/BG-03.png",
+    "title": "SHIV ANITA FARMS",
+    "details": "Lorem ipsum dolor sit amet consectetur. Id sodales etiam nibh tincidunt. Mattis at pharetra viverra scelerisque sed neque facilisi non. Pellentesque.",
+    "smallImage": "../../../assets/Home/SI-03.png"
+  },
+  {
+    "backgroundImage": "../../../assets/Home/BG-04.png",
+    "title": "SHIV SHAKTI ENTERPRISES",
+    "details": "Lorem ipsum dolor sit amet consectetur. Id sodales etiam nibh tincidunt. Mattis at pharetra viverra scelerisque sed neque facilisi non. Pellentesque.",
+    "smallImage": "../../../assets/Home/SI-04.png"
+  },
+  {
+    "backgroundImage": "../../../assets/Home/BG-05.png",
+    "title": "SHIV SHAKTI FEED MILS",
+    "details": "Lorem ipsum dolor sit amet consectetur. Id sodales etiam nibh tincidunt. Mattis at pharetra viverra scelerisque sed neque facilisi non. Pellentesque.",
+    "smallImage": "../../../assets/Home/SI-05.png"
+  }
+]

@@ -13,7 +13,24 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
   transition: background-image 1s ease-in-out; /* Smooth transition for background image */
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+  z-index: 1;
+}
+
+.content, .imageContainer {
+  position: relative;
+  z-index: 2;
 }
 
 @keyframes fadeIn {

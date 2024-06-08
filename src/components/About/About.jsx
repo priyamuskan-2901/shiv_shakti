@@ -18,8 +18,8 @@ export const About = () => {
             <button>Read More</button>
           </div>
           <div className={styles.images}>
-            <img src="../../../assets/Home/AB-01.png" alt="Image 1" />
-            <img src="../../../assets/Home/AB-02.png" alt="Image 2" />
+            <img src="/assets/Home/AB-01.png" alt="Image 1" />
+            <img src="/assets/Home/AB-02.png" alt="Image 2" />
           </div>
         </div>
       </div>

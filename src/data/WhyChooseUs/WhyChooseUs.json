@@ -1,42 +1,42 @@
 [
   {
     "id": 1,
-    "src": "../../../assets/WhyChooseUs/PRODUCTION.png",
+    "src": "/assets/WhyChooseUs/PRODUCTION.png",
     "alt": "PRODUCTIONIMG",
     "title": "PRODUCTION",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsam mollitia quia blanditiis quis nemo molestiae in beatae vero, expedita culpa cumque voluptatem aperiam atque impedit aspernatur perferendis ab ex quo provident suscipit eos temporibus. Nisi, ea, ipsum at saepe illum, animi velit aliquid ipsa doloribus minus ullam est cupiditate?"
   },
   {
     "id": 2,
-    "src": "../../../assets/WhyChooseUs/QUALITY.png",
+    "src": "/assets/WhyChooseUs/QUALITY.png",
     "alt": "QUALITYIMG",
     "title": "QUALITY",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsam mollitia quia blanditiis quis nemo molestiae in beatae vero, expedita culpa cumque voluptatem aperiam atque impedit aspernatur perferendis ab ex quo provident suscipit eos temporibus. Nisi, ea, ipsum at saepe illum, animi velit aliquid ipsa doloribus minus ullam est cupiditate?"
   },
   {
     "id": 3,
-    "src": "../../../assets/WhyChooseUs/RATING.png",
+    "src": "/assets/WhyChooseUs/RATING.png",
     "alt": "RATINGIMG",
     "title": "RATING",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsam mollitia quia blanditiis quis nemo molestiae in beatae vero, expedita culpa cumque voluptatem aperiam atque impedit aspernatur perferendis ab ex quo provident suscipit eos temporibus. Nisi, ea, ipsum at saepe illum, animi velit aliquid ipsa doloribus minus ullam est cupiditate?"
   },
   {
     "id": 4,
-    "src": "../../../assets/WhyChooseUs/RETAIL.png",
+    "src": "/assets/WhyChooseUs/RETAIL.png",
     "alt": "RETAILIMG",
     "title": "RETAIL",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsam mollitia quia blanditiis quis nemo molestiae in beatae vero, expedita culpa cumque voluptatem aperiam atque impedit aspernatur perferendis ab ex quo provident suscipit eos temporibus. Nisi, ea, ipsum at saepe illum, animi velit aliquid ipsa doloribus minus ullam est cupiditate?"
   },
   {
     "id": 5,
-    "src": "../../../assets/WhyChooseUs/SURCING.png",
+    "src": "/assets/WhyChooseUs/SURCING.png",
     "alt": "SURCINGIMG",
     "title": "SURCING",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsam mollitia quia blanditiis quis nemo molestiae in beatae vero, expedita culpa cumque voluptatem aperiam atque impedit aspernatur perferendis ab ex quo provident suscipit eos temporibus. Nisi, ea, ipsum at saepe illum, animi velit aliquid ipsa doloribus minus ullam est cupiditate?"
   },
   {
     "id": 6,
-    "src": "../../../assets/WhyChooseUs/TRANS.png",
+    "src": "/assets/WhyChooseUs/TRANS.png",
     "alt": "TRANPORTING",
     "title": "TRANSPORTATION",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsam mollitia quia blanditiis quis nemo molestiae in beatae vero, expedita culpa cumque voluptatem aperiam atque impedit aspernatur perferendis ab ex quo provident suscipit eos temporibus. Nisi, ea, ipsum at saepe illum, animi velit aliquid ipsa doloribus minus ullam est cupiditate?"

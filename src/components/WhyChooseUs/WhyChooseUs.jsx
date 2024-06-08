@@ -39,10 +39,10 @@ export const WhyChooseUs = () => {
       </div>
       <div className={styles.navigation}>
         <span className={styles.arrow} onClick={prevFeature}>
-          <img src="../../../assets/WhyChooseUs/Vector left.png" />
+          <img src="/assets/WhyChooseUs/Vector left.png" />
         </span>
         <span className={styles.arrow} onClick={nextFeature}>
-          <img src="../../../assets/WhyChooseUs/Vector right.png" />
+          <img src="/assets/WhyChooseUs/Vector right.png" />
         </span>
       </div>
       <div className={styles.description}>

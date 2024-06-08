@@ -21,7 +21,7 @@ export const Footer = () => {
             <div className={styles.contactInfo}>
               <div className={styles.contactItem}>
                 <img
-                  src="../../../assets/Footer/Vector (3).png"
+                  src="/assets/Footer/Vector (3).png"
                   className={styles.icon}
                   alt="Location"
                 />
@@ -35,7 +35,7 @@ export const Footer = () => {
               </div>
               <div className={styles.contactItem}>
                 <img
-                  src="../../../assets/Footer/Vector (1).png"
+                  src="/assets/Footer/Vector (1).png"
                   className={styles.icon}
                   alt="Contact"
                 />
@@ -50,7 +50,7 @@ export const Footer = () => {
             <div className={styles.contactInfo}>
               <div className={styles.contactItem}>
                 <img
-                  src="../../../assets/Footer/Vector (2).png"
+                  src="/assets/Footer/Vector (2).png"
                   className={styles.icon}
                   alt="Partners"
                 />
@@ -64,7 +64,7 @@ export const Footer = () => {
               </div>
               <div className={styles.contactItem}>
                 <img
-                  src="../../../assets/Footer/Vector (5).png"
+                  src="/assets/Footer/Vector (5).png"
                   className={styles.icon}
                   alt="Mail"
                 />

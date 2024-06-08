@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Heading.module.css";
-import backgroundImage from "../../../assets/Heading/CHICKS.jpeg";
+import backgroundImage from "/assets/Heading/CHICKS.jpeg";
 
 export const Heading = () => {
   return (

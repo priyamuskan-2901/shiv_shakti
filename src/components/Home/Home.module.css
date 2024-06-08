@@ -76,10 +76,10 @@
   text-align: center; /* Center align text */
 }
 
-h1, p, .exploreButton {
-  opacity: 0; /* Initial state hidden */
-  transform: translateY(100%); /* Initial state positioned below */
-}
+/* h1, p, .exploreButton {
+  opacity: 0;
+  transform: translateY(100%); 
+} */
 
 h1 {
   font-size: 3rem;

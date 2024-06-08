@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Heading.module.css";
-import backgroundImage from "/assets/Heading/CHICKS.jpeg";
+import backgroundImage from "/assets/Heading/CHICKS.jpg";
 
 export const Heading = () => {
   return (
@@ -8,7 +8,6 @@ export const Heading = () => {
       className={styles.headingSection}
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className={styles.overlay}>
         <div className={styles.textContainer}>
           <h2 className={styles.heading}>HEADING</h2>
           <h3 className={styles.subheading}>Lorem ipsum dolor sit</h3>
@@ -21,7 +20,6 @@ export const Heading = () => {
             mauris accumsan consectetur eget fusce pellentesque.
           </p>
         </div>
-      </div>
     </section>
   );
 };

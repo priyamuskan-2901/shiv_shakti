@@ -7,7 +7,7 @@
   color: #fff;
   align-items: center;
   justify-content: space-between;
-  z-index: 2;
+  z-index: 3; /* Ensure navbar is on top */
   padding: 15px 30px;
 }
 
@@ -70,15 +70,15 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 0;
+    top: 60px; /* Adjust top to leave space for the navbar */
     right: 0;
-    gap: 5px;
-    height: 35vh;
     width: 200px;
-    background-color: #8b0000;
-    z-index: 1;
+    background-color: #49170E;
+    z-index: 2; /* Ensure menu is above other content but below navbar */
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
   }
 
   .menu.open {
@@ -90,7 +90,8 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
-    margin: 0%;
+    margin: 0; /* Remove any margin */
+    padding: 10px 0; /* Adjust padding to ensure proper spacing */
   }
 
   .menuItems a {
@@ -106,6 +107,6 @@
   .hamburger {
     display: flex;
     position: relative;
-    z-index: 2;
+    z-index: 3; /* Ensure hamburger menu is on top */
   }
 }

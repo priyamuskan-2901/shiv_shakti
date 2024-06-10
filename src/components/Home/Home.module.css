@@ -30,7 +30,7 @@
 
 .content, .imageContainer {
   position: relative;
-  z-index: 2;
+  z-index: 2; /* Ensure content and image container are above the overlay */
 }
 
 @keyframes slideUp {
@@ -114,6 +114,7 @@ p {
   align-items: center;
   position: relative; /* Ensure relative positioning for absolute next slide image */
   overflow: hidden; /* Hide overflow to ensure smooth sliding effect */
+  z-index: 1; /* Ensure image container is below the navbar */
 }
 
 .chickenImage {

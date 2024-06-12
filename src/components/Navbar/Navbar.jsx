@@ -25,7 +25,7 @@ export const Navbar = () => {
             <a href="/">Home</a>
           </li>
           <li className={styles.menuitem}>
-            <a href="#about">Our Company</a>
+            <a href="#about">About Us</a>
           </li>
           <li className={styles.menuitem}>
             <a href="#companies">Companies</a>

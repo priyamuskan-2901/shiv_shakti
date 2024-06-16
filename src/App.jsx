@@ -7,7 +7,9 @@ import { Contact } from "./components/Contact/Contact";
 import { WhyChooseUs } from "./components/WhyChooseUs/WhyChooseUs.jsx";
 import { Footer } from "./components/Footer/Footer.jsx";
 import { Heading } from "./components/Heading/Heading.jsx";
+import { ExploreUs } from "./components/Explore Us/ExploreUs.jsx";
 import data from "./data/Home/Home.json";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -19,16 +21,19 @@ function App() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div
-      className={styles.App}
-    >
-      <Navbar />
-      <Home />
-      <About />
-      <WhyChooseUs />
-      <Heading />
-      <Contact />
-      <Footer />
+    <div className={styles.App}>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/companies" element={<WhyChooseUs />} />
+          <Route path="/heading" element={<Heading />} />
+          <Route path="/explore/:title" element={<ExploreUs />} />
+        </Routes>
+        <Contact />
+        <Footer />
+      </Router>
     </div>
   );
 }

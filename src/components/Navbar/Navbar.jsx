@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,16 +23,16 @@ export const Navbar = () => {
       <div className={`${styles.menu} ${isOpen ? styles.open : ""}`}>
         <ul className={styles.menuItems}>
           <li className={styles.menuitem}>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li className={styles.menuitem}>
-            <a href="#about">About Us</a>
+            <Link to="about">About Us</Link>
           </li>
           <li className={styles.menuitem}>
-            <a href="#companies">Companies</a>
+            <Link to="/companies">Companies</Link>
           </li>
           <li className={styles.menuitem}>
-            <a href="#contact">Contact Us</a>
+            <Link to="contact">Contact Us</Link>
           </li>
         </ul>
       </div>

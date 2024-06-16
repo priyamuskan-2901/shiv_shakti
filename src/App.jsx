@@ -31,6 +31,9 @@ function App() {
           <Route path="/heading" element={<Heading />} />
           <Route path="/explore/:title" element={<ExploreUs />} />
         </Routes>
+        <About />
+        <WhyChooseUs />
+        <Heading />
         <Contact />
         <Footer />
       </Router>

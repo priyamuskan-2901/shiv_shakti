@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: #49170E;
+  background-color: #49170e;
   color: #fff;
   align-items: center;
   justify-content: space-between;
@@ -46,7 +46,6 @@
 
 .menuItems a:hover {
   text-decoration: none;
-  font-size: 27px;
   opacity: 1;
   text-decoration: underline;
 }
@@ -60,9 +59,57 @@
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #fff; /* White color for the bars */
+  background-color: #fff;
   margin: 4px 0;
   transition: 0.4s;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdownArrow {
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  background-color: #49170e;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  min-width: 180px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 8px; /* Border radius for the dropdown menu */
+}
+
+.dropdownMenu.show {
+  display: block;
+}
+
+.dropdownItem {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdownItem a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.dropdownItem a:hover {
+  font-size: 21px;
+}
+
+.dropdownArrow.open {
+  transform: rotate(180deg); /* Rotate the arrow when dropdown is open */
 }
 
 @media (max-width: 768px) {
@@ -70,15 +117,15 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px; /* Adjust top to leave space for the navbar */
+    top: 60px;
     right: 0;
     width: 200px;
-    background-color: #49170E;
-    z-index: 2; /* Ensure menu is above other content but below navbar */
+    background-color: #49170e;
+    z-index: 2;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
-    margin: 0; /* Remove any margin */
-    padding: 0; /* Remove any padding */
+    margin: 0;
+    padding: 0;
   }
 
   .menu.open {
@@ -90,8 +137,8 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
-    margin: 0; /* Remove any margin */
-    padding: 10px 0; /* Adjust padding to ensure proper spacing */
+    margin: 0;
+    padding: 10px 0;
   }
 
   .menuItems a {
@@ -101,12 +148,21 @@
   }
 
   .menuItems a:hover {
-    font-size: 22px;
+    font-size: 21px;
   }
 
   .hamburger {
     display: flex;
     position: relative;
-    z-index: 3; /* Ensure hamburger menu is on top */
+    z-index: 3;
+  }
+
+  .dropdownMenu {
+    position: static;
+    min-width: 100%;
+  }
+
+  .dropdownItem {
+    width: 100%;
   }
 }

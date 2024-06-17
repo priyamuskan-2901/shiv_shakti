@@ -20,6 +20,9 @@ function App() {
 
     return () => clearInterval(interval);
   }, []);
+  const scrollToFooter = () => {
+    footerRef.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className={styles.App}>
       <Router>
@@ -27,9 +30,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/companies" element={<WhyChooseUs />} />
+          <Route path="/companies" element={<Home />} />
           <Route path="/heading" element={<Heading />} />
           <Route path="/explore/:title" element={<ExploreUs />} />
+          <Route path="/contact" element={<Footer />} />
         </Routes>
         <About />
         <WhyChooseUs />

@@ -7,6 +7,11 @@ import { About } from "./components/About/About";
 import { Contact } from "./components/Contact/Contact";
 import { WhyChooseUs } from "./components/WhyChooseUs/WhyChooseUs.jsx";
 import { Footer } from "./components/Footer/Footer.jsx";
+import Enterprises from "./components/Routes/Enterprises.jsx";
+import Feedmills from "./components/Routes/Feedmills.jsx";
+import Omshiv from "./components/Routes/Omshiv.jsx";
+import Shivanita from "./components/Routes/Shivanita.jsx";
+import ShivShaktiHatcheries from "./components/Routes/ShivShaktiHatcheries.jsx";
 import data from "./data/Home/Home.json";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -22,16 +27,23 @@ function App() {
   }, []);
 
   return (
-    <div className={styles.App}>
-       <div className="pb-8">
-        <Navbar />
+    <Router>
+      <div className={styles.App}>
+        <div className="pb-8">
+          <Navbar />
         </div>
-        <Home />
-        <About />
-        <WhyChooseUs />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/om-shiv-farms" element={<Omshiv />} />
+         <Route path="/shiv-anita-farms" element={<Shivanita />} />
+         <Route path="/shiv-shakti-enterprises" element={<Enterprises />} />
+         <Route path="/shiv-shakti-feed-mills" element={<Feedmills />} />
+         <Route path="/shiv-shakti-hatcheries" element={<ShivShaktiHatcheries />} />
+        </Routes>
         <Contact />
         <Footer />
-    </div>
+      </div>
+    </Router>
   );
 }
 

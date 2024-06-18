@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Link, NavLink} from 'react-router-dom'
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaAngleDown } from "react-icons/fa";
 import "./Navbar.css";
@@ -26,7 +27,7 @@ export const Navbar = () => {
           </a>
           <ul className="hidden sm:flex text-white">
           <li className="pb-4 pt-4 pr-8 hover:text-white hover:underline duration-200 text-lg">
-             <a href="#">Home</a>
+            <Link to="/">Home</Link>
             </li>
             <li className="pb-4 pt-4 pr-8 hover:text-white hover:underline duration-200 text-lg">
              <a href="#about">About Us</a>
@@ -39,16 +40,16 @@ export const Navbar = () => {
                 <div className="dropdown">
                   <ul className="leading-5">
                     <li className="dropdown-link">
-                      <a href="#">OM SHIV FARMS</a>
+                      <Link to="/om-shiv-farms">OM SHIV FARMS</Link>
                     </li>
                     <li className="dropdown-link">
-                      <a href="#">SHIVANITA FARMS</a>
+                    <Link to="/shiv-anita-farms">SHIVANITA FARMS</Link>
                     </li>
                     <li className="dropdown-link">
-                      <a href="#">SHIV SHAKTI ENTERPRISES</a>
+                      <Link to="/shiv-shakti-enterprises">SHIV SHAKTI ENTERPRISES</Link>
                     </li>
                     <li className="dropdown-link">
-                      <a href="#">SHIV SHAKTI FEED MILLS</a>
+                      <Link to="/shiv-shakti-feed-mills">SHIV SHAKTI FEED MILLS</Link>
                     </li>
                   </ul>
                 </div>
@@ -96,16 +97,16 @@ export const Navbar = () => {
                 {dropdown && (
                   <ul className="dropdown-mobile">
                     <li className="dropdown-link">
-                      <a href="#">OM SHIV FARMS</a>
+                    <Link to="/om-shiv-farms">OM SHIV FARMS</Link>
                     </li>
                     <li className="dropdown-link">
-                      <a href="#">SHIVANITA FARMS</a>
+                    <Link to="/shiv-anita-farms">SHIVANITA FARMS</Link>
                     </li>
                     <li className="dropdown-link">
-                      <a href="#">SHIV SHAKTI ENTERPRISES</a>
+                    <Link to="/shiv-shakti-enterprises">SHIV SHAKTI ENTERPRISES</Link>
                     </li>
                     <li className="dropdown-link">
-                      <a href="#">SHIV SHAKTI FEED MILLS</a>
+                    <Link to="/shiv-shakti-feed-mills">SHIV SHAKTI FEED MILLS</Link>
                     </li>
                   </ul>
                 )}

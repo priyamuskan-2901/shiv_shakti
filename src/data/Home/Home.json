@@ -3,30 +3,35 @@
     "backgroundImage": "/assets/Home/BG-01.png",
     "title": "SHIV SHAKTI HATCHERIES",
     "details": "Lorem ipsum dolor sit amet consectetur. Id sodales etiam nibh tincidunt. Mattis at pharetra viverra scelerisque sed neque facilisi non. Pellentesque.",
-    "smallImage": "/assets/Home/SI-01.png"
+    "smallImage": "/assets/Home/SI-01.png",
+    "route": "/shiv-shakti-hatcheries"
   },
   {
     "backgroundImage": "/assets/Home/BG-02.png",
     "title": "OM SHIV FARMS",
     "details": "Lorem ipsum dolor sit amet consectetur. Id sodales etiam nibh tincidunt. Mattis at pharetra viverra scelerisque sed neque facilisi non. Pellentesque.",
-    "smallImage": "/assets/Home/SI-02.png"
+    "smallImage": "/assets/Home/SI-02.png",
+    "route": "/om-shiv-farms"
   },
   {
     "backgroundImage": "/assets/Home/BG-03.png",
     "title": "SHIV ANITA FARMS",
     "details": "Lorem ipsum dolor sit amet consectetur. Id sodales etiam nibh tincidunt. Mattis at pharetra viverra scelerisque sed neque facilisi non. Pellentesque.",
-    "smallImage": "/assets/Home/SI-03.png"
+    "smallImage": "/assets/Home/SI-03.png",
+    "route": "/shiv-anita-farms"
   },
   {
     "backgroundImage": "/assets/Home/BG-04.png",
     "title": "SHIV SHAKTI ENTERPRISES",
     "details": "Lorem ipsum dolor sit amet consectetur. Id sodales etiam nibh tincidunt. Mattis at pharetra viverra scelerisque sed neque facilisi non. Pellentesque.",
-    "smallImage": "/assets/Home/SI-04.png"
+    "smallImage": "/assets/Home/SI-04.png",
+    "route": "/shiv-shakti-enterprises"
   },
   {
     "backgroundImage": "/assets/Home/BG-05.png",
-    "title": "SHIV SHAKTI FEED MILS",
+    "title": "SHIV SHAKTI FEED MILLS",
     "details": "Lorem ipsum dolor sit amet consectetur. Id sodales etiam nibh tincidunt. Mattis at pharetra viverra scelerisque sed neque facilisi non. Pellentesque.",
-    "smallImage": "/assets/Home/SI-05.png"
+    "smallImage": "/assets/Home/SI-05.png",
+    "route": "/shiv-shakti-feed-mills"
   }
 ]

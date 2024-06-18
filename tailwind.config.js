@@ -1,8 +1,20 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'brown-900': '#49170E',
+        'brown-800': '#8b4513',
+      },
+      fontFamily: {
+        calistoga: ['Calistoga', 'sans-serif'],
+      },
+      
+    },
   },
   plugins: [],
 }

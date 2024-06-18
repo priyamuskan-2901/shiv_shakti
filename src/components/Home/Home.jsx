@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import styles from "./Home.module.css";
 import data from "../../data/Home/Home.json";
+import './animations.css';
 
 export const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -23,40 +22,23 @@ export const Home = () => {
     backgroundImage: `url(${data[currentSlide].backgroundImage})`,
   };
 
-  const navigate = useNavigate();
-
-  const handleExplore = () => {
-    const currentTitle = data[currentSlide].title;
-    navigate(`/explore/${currentTitle}`);
-  };
-
   return (
-    <section className={styles.section}>
-      <div className={styles.home} style={backgroundImageStyle}>
-        <div className={styles.content}>
-          <h1 className={textAnimation ? styles.slideUp : styles.slideDown}>
-            {data[currentSlide].title}
-          </h1>
-          <p className={textAnimation ? styles.slideUp : styles.slideDown}>
-            {data[currentSlide].details}
-          </p>
-          <button
-            className={`${styles.exploreButton} ${
-              textAnimation ? styles.slideUp : styles.slideDown
-            }`}
-            onClick={handleExplore}
-          >
-            EXPLORE NOW
-          </button>
-        </div>
-        <div className={styles.imageContainer}>
+    <section className="flex flex-col overflow-hidden h-screen">
+      <div className="flex flex-col lg:flex-row-reverse justify-between items-center p-12 lg:p-20 h-full text-white bg-cover bg-center bg-no-repeat relative transition-all duration-1000 ease-in-out" style={backgroundImageStyle}>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70 z-1"></div>
+        <div className="relative z-2 max-w-full lg:max-w-2/5 flex justify-center items-center overflow-hidden mb-10 lg:mb-0 lg:ml-10">
           <img
             src={data[currentSlide].smallImage}
             alt={data[currentSlide].title}
-            className={`${styles.chickenImage} ${
-              textAnimation ? styles.slideIn : styles.slideDown
-            }`}
+            className={`max-w-full rounded-lg transition-transform duration-1000 ease-in-out ${textAnimation ? 'slideUp' : 'slideDown'}`}
           />
+        </div>
+        <div className="relative z-2 max-w-full lg:max-w-1/2 text-center lg:text-left">
+          <h1 className={`text-3xl lg:text-4xl mb-5 ${textAnimation ? 'slideUp' : 'slideDown'}`}>{data[currentSlide].title}</h1>
+          <p className={`text-lg lg:text-xl mb-10 ${textAnimation ? 'slideUp' : 'slideDown'}`}>{data[currentSlide].details}</p>
+          <button className={`bg-brown-900 text-white border-none px-6 py-4 text-lg font-medium cursor-pointer rounded-lg transition-colors duration-300 ease ${textAnimation ? 'slideUp' : 'slideDown'}`}>
+            EXPLORE NOW
+          </button>
         </div>
       </div>
     </section>

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import styles from "./WhyChooseUs.module.css";
 import featureData from "../../data/WhyChooseUs/WhyChooseUs.json";
 
 export const WhyChooseUs = () => {
@@ -23,31 +22,29 @@ export const WhyChooseUs = () => {
   const feature = featureData[currentFeature];
 
   return (
-    <section className={styles.whyChooseUs} id="companies">
-      <h2 className={styles.title}>Why Choose Us?</h2>
-      <div className={styles.features}>
+    <section className="text-center p-5 bg-brown-900 text-white" id="companies">
+      <h2 className="text-2xl mb-5">Why Choose Us?</h2>
+      <div className="flex justify-center items-center mb-5">
         {featureData.map((feature, index) => (
           <div
             key={index}
-            className={`${styles.feature} ${
-              index === currentFeature ? styles.active : ""
-            }`}
+            className={`transition-opacity transition-transform duration-500 mx-2 ${index === currentFeature ? 'opacity-100 transform scale-110' : 'opacity-50'}`}
           >
-            <img src={feature.src} alt={feature.alt} className={styles.image} />
+            <img src={feature.src} alt={feature.alt} className="w-24 h-24" />
           </div>
         ))}
       </div>
-      <div className={styles.navigation}>
-        <span className={styles.arrow} onClick={prevFeature}>
+      <div className="flex justify-center mb-5">
+        <span className="cursor-pointer mx-5 transition-transform duration-300 hover:transform hover:scale-110" onClick={prevFeature}>
           <img src="/assets/WhyChooseUs/Vector left.png" />
         </span>
-        <span className={styles.arrow} onClick={nextFeature}>
+        <span className="cursor-pointer mx-5 transition-transform duration-300 hover:transform hover:scale-110" onClick={nextFeature}>
           <img src="/assets/WhyChooseUs/Vector right.png" />
         </span>
       </div>
-      <div className={styles.description}>
-        <h3>{feature.title}</h3>
-        <p>{feature.description}</p>
+      <div className="text-center mt-7">
+        <h3 className="text-2xl mb-5">{feature.title}</h3>
+        <p className="text-xl opacity-50">{feature.description}</p>
       </div>
     </section>
   );

@@ -1,80 +1,125 @@
 import React, { useState } from "react";
-import styles from "./Navbar.module.css";
-import { Link } from "react-router-dom";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { FaAngleDown } from "react-icons/fa";
+import "./Navbar.css";
 
 export const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [navbar, setNavbar] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
+  const navHandler = () => {
+    setNavbar(!navbar);
   };
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+  const dropdownHandler = () => {
+    setDropdown(!dropdown);
   };
 
   return (
-    <nav className={styles.navbar}>
-      <a className={styles.title} href="/">
-        SHIV SHAKTI <br />
-        HATCHERIES
-      </a>
-      <div className={styles.hamburger} onClick={toggleMenu}>
-        <span className={styles.bar}></span>
-        <span className={styles.bar}></span>
-        <span className={styles.bar}></span>
-      </div>
-      <div className={`${styles.menu} ${isOpen ? styles.open : ""}`}>
-        <ul className={styles.menuItems}>
-          <li className={styles.menuitem}>
-            <Link to="/">Home</Link>
-          </li>
-          <li className={styles.menuitem}>
-            <Link to="/about">About Us</Link>
-          </li>
-          <li
-            className={`${styles.menuitem} ${styles.dropdown}`}
-            onClick={toggleDropdown}
+    <div className="nav-container pb-12">
+      <div className="fixed left-0 top-0 w-full z-10 shadow-md bg-brown-900">
+        <div className="max-w-full m-auto flex justify-between items-center px-4 py-2 text-white">
+          {/* logo */}
+          <a className="text-2xl font-semibold ml-2" href="/">
+            SHIV SHAKTI <br />
+            HATCHERIES
+          </a>
+          <ul className="hidden sm:flex text-white">
+          <li className="pb-4 pt-4 pr-8 hover:text-white hover:underline duration-200 text-lg">
+             <a href="#">Home</a>
+            </li>
+            <li className="pb-4 pt-4 pr-8 hover:text-white hover:underline duration-200 text-lg">
+             <a href="#about">About Us</a>
+            </li>
+            <li className="nav-link pb-4 pt-4 pr-7 hover:text-white hover:underline duration-200 relative text-lg">
+              <div className="flex items-center cursor-pointer" onClick={dropdownHandler}>
+                Companies <FaAngleDown className="ml-1 text-white" />
+              </div>
+              {dropdown && (
+                <div className="dropdown">
+                  <ul className="leading-5">
+                    <li className="dropdown-link">
+                      <a href="#">OM SHIV FARMS</a>
+                    </li>
+                    <li className="dropdown-link">
+                      <a href="#">SHIVANITA FARMS</a>
+                    </li>
+                    <li className="dropdown-link">
+                      <a href="#">SHIV SHAKTI ENTERPRISES</a>
+                    </li>
+                    <li className="dropdown-link">
+                      <a href="#">SHIV SHAKTI FEED MILLS</a>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </li>
+            <li className="pb-4 pt-4 pr-2 hover:text-white hover:underline duration-200 text-lg">
+             <a href="#contact">Contact Us</a>
+            </li>
+          </ul>
+
+          {/* Mobile Button */}
+          <div onClick={navHandler} className="block sm:hidden z-10">
+            {navbar ? (
+              <AiOutlineClose size={20} className="text-white" />
+            ) : (
+              <AiOutlineMenu size={20} className="text-white" />
+            )}
+          </div>
+          {/* Mobile Menu */}
+          <div
+            className={
+              navbar
+                ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex pt-14 pl-6 w-full h-screen bg-brown-900 text-white ease-in duration-200"
+                : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex pt-14 pl-6 w-full h-screen bg-brown-900 text-white ease-in duration-200"
+            }
           >
-            <span>
-              <Link to="/companies">Companies</Link>
-              <span
-                className={`${styles.dropdownArrow} ${
-                  isDropdownOpen ? styles.open : ""
-                }`}
+            <ul>
+            <li
+                onClick={navHandler}
+                className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-white hover:underline"
               >
-                ▼
-              </span>
-            </span>
-            <ul
-              className={`${styles.dropdownMenu} ${
-                isDropdownOpen ? styles.show : ""
-              }`}
-            >
-              <li className={styles.dropdownItem}>
-                <Link to="/explore/OM SHIV FARMS">Om Shiv Farms</Link>
+                Home
               </li>
-              <li className={styles.dropdownItem}>
-                <Link to="/explore/SHIV ANITA FARMS">Shiv Anita Farms</Link>
+              <li
+                onClick={navHandler}
+                className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-white hover:underline"
+              >
+                About Us
               </li>
-              <li className={styles.dropdownItem}>
-                <Link to="/explore/SHIV SHAKTI ENTERPRISES">
-                  Shiv Shakti Enterprises
-                </Link>
+              <li
+                onClick={dropdownHandler}
+                className="pl-0 pr-4 pt-3 pb-3 text-2xl flex hover:text-white hover:underline"
+              >
+                Companies <FaAngleDown className="ml-1 pt-2 text-white" />
+                {dropdown && (
+                  <ul className="dropdown-mobile">
+                    <li className="dropdown-link">
+                      <a href="#">OM SHIV FARMS</a>
+                    </li>
+                    <li className="dropdown-link">
+                      <a href="#">SHIVANITA FARMS</a>
+                    </li>
+                    <li className="dropdown-link">
+                      <a href="#">SHIV SHAKTI ENTERPRISES</a>
+                    </li>
+                    <li className="dropdown-link">
+                      <a href="#">SHIV SHAKTI FEED MILLS</a>
+                    </li>
+                  </ul>
+                )}
               </li>
-              <li className={styles.dropdownItem}>
-                <Link to="/explore/SHIV SHAKTI FEED MILS">
-                  Shiv Shakti Feed Mils
-                </Link>
+              <li
+                onClick={navHandler}
+                className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-white hover:underline"
+              >
+                Contact Us
               </li>
             </ul>
-          </li>
-          <li className={styles.menuitem}>
-            <Link to="/contact">Contact Us</Link>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
-    </nav>
+    </div>
   );
 };

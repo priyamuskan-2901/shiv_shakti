@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Link, NavLink} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaAngleDown } from "react-icons/fa";
 import "./Navbar.css";
@@ -16,6 +16,11 @@ export const Navbar = () => {
     setDropdown(!dropdown);
   };
 
+  const closeNavbar = () => {
+    setNavbar(false);
+    setDropdown(false);
+  };
+
   return (
     <div className="nav-container pb-12">
       <div className="fixed left-0 top-0 w-full z-10 shadow-md bg-brown-900">
@@ -26,11 +31,11 @@ export const Navbar = () => {
             HATCHERIES
           </a>
           <ul className="hidden sm:flex text-white">
-          <li className="pb-4 pt-4 pr-8 hover:text-white hover:underline duration-200 text-lg">
-            <Link to="/">Home</Link>
+            <li className="pb-4 pt-4 pr-8 hover:text-white hover:underline duration-200 text-lg">
+              <Link to="/">Home</Link>
             </li>
             <li className="pb-4 pt-4 pr-8 hover:text-white hover:underline duration-200 text-lg">
-             <a href="#about">About Us</a>
+              <a href="#about">About Us</a>
             </li>
             <li className="nav-link pb-4 pt-4 pr-7 hover:text-white hover:underline duration-200 relative text-lg">
               <div className="flex items-center cursor-pointer" onClick={dropdownHandler}>
@@ -40,23 +45,23 @@ export const Navbar = () => {
                 <div className="dropdown">
                   <ul className="leading-5">
                     <li className="dropdown-link">
-                      <Link to="/om-shiv-farms">OM SHIV FARMS</Link>
+                      <Link to="/om-shiv-farms" onClick={closeNavbar}>OM SHIV FARMS</Link>
                     </li>
                     <li className="dropdown-link">
-                    <Link to="/shiv-anita-farms">SHIVANITA FARMS</Link>
+                      <Link to="/shiv-anita-farms" onClick={closeNavbar}>SHIVANITA FARMS</Link>
                     </li>
                     <li className="dropdown-link">
-                      <Link to="/shiv-shakti-enterprises">SHIV SHAKTI ENTERPRISES</Link>
+                      <Link to="/shiv-shakti-enterprises" onClick={closeNavbar}>SHIV SHAKTI ENTERPRISES</Link>
                     </li>
                     <li className="dropdown-link">
-                      <Link to="/shiv-shakti-feed-mills">SHIV SHAKTI FEED MILLS</Link>
+                      <Link to="/shiv-shakti-feed-mills" onClick={closeNavbar}>SHIV SHAKTI FEED MILLS</Link>
                     </li>
                   </ul>
                 </div>
               )}
             </li>
             <li className="pb-4 pt-4 pr-2 hover:text-white hover:underline duration-200 text-lg">
-             <a href="#contact">Contact Us</a>
+              <a href="#contact">Contact Us</a>
             </li>
           </ul>
 
@@ -77,17 +82,17 @@ export const Navbar = () => {
             }
           >
             <ul>
-            <li
+              <li
                 onClick={navHandler}
                 className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-white hover:underline"
               >
-                Home
+                <Link to="/">Home</Link>
               </li>
               <li
                 onClick={navHandler}
                 className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-white hover:underline"
               >
-                About Us
+                <a href="#about">About Us</a>
               </li>
               <li
                 onClick={dropdownHandler}
@@ -96,17 +101,17 @@ export const Navbar = () => {
                 Companies <FaAngleDown className="ml-1 pt-2 text-white" />
                 {dropdown && (
                   <ul className="dropdown-mobile">
-                    <li className="dropdown-link">
-                    <Link to="/om-shiv-farms">OM SHIV FARMS</Link>
+                    <li className="dropdown-link" onClick={closeNavbar}>
+                      <Link to="/om-shiv-farms">OM SHIV FARMS</Link>
                     </li>
-                    <li className="dropdown-link">
-                    <Link to="/shiv-anita-farms">SHIVANITA FARMS</Link>
+                    <li className="dropdown-link" onClick={closeNavbar}>
+                      <Link to="/shiv-anita-farms">SHIVANITA FARMS</Link>
                     </li>
-                    <li className="dropdown-link">
-                    <Link to="/shiv-shakti-enterprises">SHIV SHAKTI ENTERPRISES</Link>
+                    <li className="dropdown-link" onClick={closeNavbar}>
+                      <Link to="/shiv-shakti-enterprises">SHIV SHAKTI ENTERPRISES</Link>
                     </li>
-                    <li className="dropdown-link">
-                    <Link to="/shiv-shakti-feed-mills">SHIV SHAKTI FEED MILLS</Link>
+                    <li className="dropdown-link" onClick={closeNavbar}>
+                      <Link to="/shiv-shakti-feed-mills">SHIV SHAKTI FEED MILLS</Link>
                     </li>
                   </ul>
                 )}
@@ -115,7 +120,7 @@ export const Navbar = () => {
                 onClick={navHandler}
                 className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-white hover:underline"
               >
-                Contact Us
+                <a href="#contact">Contact Us</a>
               </li>
             </ul>
           </div>

@@ -15,7 +15,9 @@ import ShivShaktiHatcheries from "./components/Routes/ShivShaktiHatcheries.jsx";
 import data from "./data/Home/Home.json";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+
 function App() {
+
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -27,6 +29,7 @@ function App() {
   }, []);
 
   return (
+    
     <Router>
       <div className={styles.App}>
         <div className="pb-8">

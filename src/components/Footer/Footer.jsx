@@ -8,10 +8,7 @@ export const Footer = () => {
         <div className="flex-1 p-5 md:p-12">
           <h2 className="text-2xl font-bold text-brown-900 mb-2">SHIV SHAKTI HATCHERIES</h2>
           <p className="text-gray-800">
-            Lorem ipsum dolor sit amet consectetur. Scelerisque arcu eu velit
-            scelerisque in. Tellus ut sem tristique viverra arcu neque suscipit.
-            Euismod mattis tortor eget interdum semper. Nec mi viverra dictum
-            morbi id habitant quam semper.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima similique cumque esse quam quae hic ratione assumenda laboriosam suscipit modi fugiat voluptates, eveniet beatae voluptatem excepturi ullam fugit magni explicabo ad vel molestias velit amet? Aut modi praesentium aperiam perferendis?
           </p>
         </div>
         <div className="flex-2 p-5 md:p-12">
@@ -33,7 +30,11 @@ export const Footer = () => {
                   <img src="/assets/Footer/Vector (1).png" className="w-6 h-6" alt="Contact" />
                   <div>
                     <h4 className="text-base font-semibold text-brown-900 mb-1">Contact us</h4>
-                    <p className="text-sm text-gray-800 m-0">98267*****</p>
+                    <p className="text-sm text-gray-800 m-0">
+                    Shiv kumar singh-(+91): 9430055438 <br />
+                    Chandan kumar singh-(+91):9431244623, 8709639243 <br />
+                    Kundan kumar singh-(+91):7295959698, 9431264105
+                    </p>
                   </div>
                 </div>
               </div>
@@ -45,7 +46,14 @@ export const Footer = () => {
                   <div>
                     <h4 className="text-base font-semibold text-brown-900 mb-1">Business partners</h4>
                     <p className="text-sm text-gray-800 m-0">
-                      Lorem ipsum dolor sit amet consectetur. Scelerisque arcu eu velit scelerisque in.
+                      Shiv kumar singh ( Managing director)
+                       <br />
+                      Chandan kumar singh
+                      (Managing director- Sales)
+                       <br />
+                      Kundan kumar singh
+                      (Managing director- production)
+                     
                     </p>
                   </div>
                 </div>

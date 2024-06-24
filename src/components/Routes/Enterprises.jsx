@@ -19,10 +19,10 @@ export default function Enterprises() {
                             Corrugated Box Manufacturing Excellence
                         </h2>
                         <p className="mt-6 text-black">
-                            Shiv Shakti Enterprises, founded in 2014 under the direction of Chandan Kumar Singh, specializes in manufacturing chicks boxes, egg boxes, and other packaging boxes tailored to client specifications.
+                        Shiv Shakti Enterprises, founded in 2014, specializes in manufacturing chicks boxes, egg boxes, and other packaging boxes tailored to client specifications. With a strong commitment to quality and innovation, the company ensures that each product meets stringent durability and performance standards.
                         </p>
                         <p className="mt-4 text-black">
-                            The unit leverages its expertise to deliver high-quality corrugated boxes, ensuring durable and effective packaging solutions for various agricultural and industrial needs.
+                        The unit leverages its expertise to deliver high-quality corrugated boxes, ensuring durable and effective packaging solutions for various agricultural and industrial needs. Utilizing advanced manufacturing techniques and high-grade materials.
                         </p>
                     </div>
                 </div>

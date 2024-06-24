@@ -9,7 +9,7 @@ export const Footer = () => {
   return (
     <footer className="bg-gray-100 bg-opacity-100 font-calistoga box-border">
       <div className="flex flex-col md:flex-row justify-between py-5 px-5 md:px-10 w-full">
-        <div className="flex-1 p-5 md:p-12">
+        <div className=" p-5 md:p-12 md:w-1/3">
           <h2 className="text-2xl font-bold text-brown-900 mb-2">{currentRouteData.heading}</h2>
           <p className="text-gray-800 mb-4">
             {currentRouteData.detail}
@@ -19,7 +19,9 @@ export const Footer = () => {
           <h3 className="text-xl font-semibold text-brown-900 mb-2 text-center md:text-centre">Need Help? Contact Our Team</h3>
           <div className="flex flex-col md:flex-row gap-5">
             <div className="flex-1 ml-0 md:ml-7">
+              
               <div className="flex flex-col gap-12 mt-2">
+              <a href={currentRouteData.mapLink} target="_blank" rel="noopener noreferrer">
                 <div className="flex gap-2 p-1">
                   <img src="/assets/Footer/Vector (3).png" className="w-6 h-6" alt="Location" />
                   <div>
@@ -29,6 +31,7 @@ export const Footer = () => {
                     </p>
                   </div>
                 </div>
+                </a>
                 <div className="flex gap-2 p-1">
                   <img src="/assets/Footer/Vector (5).png" className="w-6 h-6" alt="Mail" />
                   <div>

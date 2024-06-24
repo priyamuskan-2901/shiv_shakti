@@ -20,10 +20,10 @@ export default function Omshiv() {
                             Integrated Breeding Excellence Since 2022
                         </h2>
                         <p className="mt-6 text-black">
-                            Om Shiv Farms is an integrated breeding unit established in 2022. It is overseen by Kundan Kumar Singh, the younger son of Shiv Kumar Singh, founder of Shiv Shakti Hatcheries.
+                        Om Shiv Farms, established in 2022, is an integrated breeding unit of Shiv Shakti Hatcheries. The farm specializes in the production of COBB 430 hatching eggs sourced from Vencobb parent birds provided by Venkys India.
                         </p>
                         <p className="mt-4 text-black">
-                            The farm specializes in the production of COBB 430 hatching eggs sourced from Vencobb parent birds provided by Venkys India. This integrated approach ensures high-quality poultry breeding, benefiting from the expertise and resources of Shiv Shakti Hatcheries.
+                        This integrated approach ensures high-quality poultry breeding, benefiting from the expertise and resources of Shiv Shakti Hatcheries, including their advanced breeding techniques and state-of-the-art facilities. The collaboration with Venkys India guarantees superior genetics and robust health in the poultry produced.
                         </p>
                     </div>
                 </div>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import styles from "./App.module.css";
-import Layout from './Layout.jsx';
 import { Navbar } from "./components/Navbar/Navbar";
 import { Home } from "./components/Home/Home.jsx";
 import { About } from "./components/About/About";
@@ -14,6 +13,7 @@ import Shivanita from "./components/Routes/Shivanita.jsx";
 import ShivShaktiHatcheries from "./components/Routes/ShivShaktiHatcheries.jsx";
 import data from "./data/Home/Home.json";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import WhatsAppButton from "./WhatsAppButton";
 
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -35,13 +35,16 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/om-shiv-farms" element={<Omshiv />} />
-         <Route path="/shiv-anita-farms" element={<Shivanita />} />
-         <Route path="/shiv-shakti-enterprises" element={<Enterprises />} />
-         <Route path="/shiv-shakti-feed-mills" element={<Feedmills />} />
-         <Route path="/shiv-shakti-hatcheries" element={<ShivShaktiHatcheries />} />
+          <Route path="/shiv-anita-farms" element={<Shivanita />} />
+          <Route path="/shiv-shakti-enterprises" element={<Enterprises />} />
+          <Route path="/shiv-shakti-feed-mills" element={<Feedmills />} />
+          <Route path="/shiv-shakti-hatcheries" element={<ShivShaktiHatcheries />} />
         </Routes>
         <Contact />
         <Footer />
+        <WhatsAppButton 
+          phoneNumber={import.meta.env.VITE_WHATSAPP_PHONE_NUMBER} // Accessing phone number from environment variable
+        />
       </div>
     </Router>
   );

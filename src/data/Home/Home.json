@@ -2,35 +2,35 @@
   {
     "backgroundImage": "/assets/Home/BG-01.png",
     "title": "SHIV SHAKTI HATCHERIES",
-    "details": "Lorem ipsum dolor sit amet consectetur. Id sodales etiam nibh tincidunt. Mattis at pharetra viverra scelerisque sed neque facilisi non. Pellentesque.",
+    "details": "A breeding unit for the production of COBB 430 hatching eggs sourced from Vencobb parent birds provided by Venkys India",
     "smallImage": "/assets/Home/SI-01.png",
     "route": "/shiv-shakti-hatcheries"
   },
   {
     "backgroundImage": "/assets/Home/BG-02.png",
     "title": "OM SHIV FARMS",
-    "details": "Lorem ipsum dolor sit amet consectetur. Id sodales etiam nibh tincidunt. Mattis at pharetra viverra scelerisque sed neque facilisi non. Pellentesque.",
+    "details": "An ingtegrated breeding unit for the production of COBB 430 hatching eggs sourced from Vencobb parent birds provided by Venkys India",
     "smallImage": "/assets/Home/SI-02.png",
     "route": "/om-shiv-farms"
   },
   {
     "backgroundImage": "/assets/Home/BG-03.png",
     "title": "SHIVANITA FARMS",
-    "details": "Lorem ipsum dolor sit amet consectetur. Id sodales etiam nibh tincidunt. Mattis at pharetra viverra scelerisque sed neque facilisi non. Pellentesque.",
+    "details": "An incubation center specializing in hatching COBB 430 eggs collected from our breeding units into healthy chicks.",
     "smallImage": "/assets/Home/SI-03.png",
     "route": "/shiv-anita-farms"
   },
   {
     "backgroundImage": "/assets/Home/BG-04.png",
     "title": "SHIV SHAKTI ENTERPRISES",
-    "details": "Lorem ipsum dolor sit amet consectetur. Id sodales etiam nibh tincidunt. Mattis at pharetra viverra scelerisque sed neque facilisi non. Pellentesque.",
+    "details": "Manufacturing unit of chicks boxes, egg boxes, and other packaging boxes tailored to client specifications.",
     "smallImage": "/assets/Home/SI-04.png",
     "route": "/shiv-shakti-enterprises"
   },
   {
     "backgroundImage": "/assets/Home/BG-05.png",
     "title": "SHIV SHAKTI FEED MILLS",
-    "details": "Lorem ipsum dolor sit amet consectetur. Id sodales etiam nibh tincidunt. Mattis at pharetra viverra scelerisque sed neque facilisi non. Pellentesque.",
+    "details": "Production of high-quality feed for chicks",
     "smallImage": "/assets/Home/SI-05.png",
     "route": "/shiv-shakti-feed-mills"
   }

@@ -15,7 +15,8 @@ export const About = () => {
           <span className="text-6xl mb-5 font-bold sm:text-6xl text-brown-900 justify-center">About Us</span>
         </div>
         <div>
-          <p className="text-base sm:text-lg">Hello Muskan, I am the about us section. How are you? Someone told you are the best and so cute of all time.</p>
+          <p className="text-base p-4 px-8 sm:text-lg">Shiv Shakti Hatcheries, founded in 1998 in Jehanabad, Bihar, specializes in broiler chicken farming with COBB 430 eggs from Vencobb parent birds. They expanded with Shivanita Farms & Hatcheries for incubation and vaccination, Om Shiv Farms for hatching eggs,Shiv Shakti Feed Mills, dedicated to producing high-quality feed for chicks, and Shiv Shakti Enterprises for customized corrugated boxes. 
+          </p>
         </div>
 
         <div className="flex justify-center mt-8">

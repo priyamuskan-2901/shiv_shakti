@@ -26,9 +26,8 @@ export const Navbar = () => {
       <div className="fixed left-0 top-0 w-full z-10 shadow-md bg-brown-900">
         <div className="max-w-full m-auto flex justify-between items-center px-4 py-2 text-white">
           {/* logo */}
-          <a className="text-2xl font-semibold ml-2" href="/">
-            SHIV SHAKTI <br />
-            HATCHERIES
+          <a className="flex items-center ml-2 py-2" href="/">
+            <img src="/assets/nav/logo.png" alt="Shiv Shakti Hatcheries" className="h-16 w-37 mr-2" />
           </a>
           <ul className="hidden sm:flex text-white">
             <li className="pb-4 pt-4 pr-8 hover:text-white hover:underline duration-200 text-lg">

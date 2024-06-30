@@ -29,7 +29,7 @@ function App() {
   return (
     <Router>
       <div className={styles.App}>
-        <div className="pb-8">
+        <div className="pb-12">
           <Navbar />
         </div>
         <Routes>

@@ -20,7 +20,7 @@ export const Footer = () => {
           <div className="flex flex-col md:flex-row gap-5">
             <div className="flex-1 ml-0 md:ml-7">
               
-              <div className="flex flex-col gap-12 mt-2">
+              <div className="flex flex-col gap-5 md:gap-12 mt-2">
               <a href={currentRouteData.mapLink} target="_blank" rel="noopener noreferrer">
                 <div className="flex gap-2 p-1">
                   <img src="/assets/Footer/Vector (3).png" className="w-6 h-6" alt="Location" />
@@ -32,6 +32,7 @@ export const Footer = () => {
                   </div>
                 </div>
                 </a>
+                <a href="mailto:Shivshaktihatcheries@gmail.com" className="text-blue-500">
                 <div className="flex gap-2 p-1">
                   <img src="/assets/Footer/Vector (5).png" className="w-6 h-6" alt="Mail" />
                   <div>
@@ -39,6 +40,7 @@ export const Footer = () => {
                     <p className="text-sm text-gray-800 m-0">Shivshaktihatcheries@gmail.com</p>
                   </div>
                 </div>
+                </a>
               </div>
             </div>
             <div className="flex-1 ml-0 md:ml-7">

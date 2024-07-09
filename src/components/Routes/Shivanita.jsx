@@ -11,7 +11,7 @@ export default function Shivanita() {
                 <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                     <div className="py-8 md:w-5/12 lg:w-5/12">
                         <img
-                            src="/assets/Home/SI-03.png"
+                            src="/assets/Home/image 17.png"
                             alt="Shivanita Farms"
                         />
                     </div>

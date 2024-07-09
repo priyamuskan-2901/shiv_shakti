@@ -10,7 +10,7 @@ export default function Enterprises() {
                 <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                     <div className="py-8 md:w-5/12 lg:w-5/12">
                         <img
-                            src="/assets/Home/SI-04.png"
+                            src="/assets/Home/image 8.png"
                             alt="Shiv Shakti Enterprises"
                         />
                     </div>

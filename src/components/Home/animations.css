@@ -1,38 +1,48 @@
+.gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%; /* Adjust height as needed */
+  background: linear-gradient(to top, rgba(105, 105, 105, 0.8), rgba(105, 105, 105, 0)); /* Brownish-grey gradient */
+  pointer-events: none; /* Ensure this div doesn't block interactions */
+}
+
 @keyframes slideUp {
-    0% {
+  0% {
       transform: translateY(100%);
       opacity: 0;
-    }
-    50% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
   }
-  
-  @keyframes slideDown {
-    0% {
+  50% {
       transform: translateY(0);
       opacity: 1;
-    }
-    50% {
+  }
+  100% {
       transform: translateY(0);
       opacity: 1;
-    }
-    100% {
+  }
+}
+
+@keyframes slideDown {
+  0% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  50% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  100% {
       transform: translateY(-100%);
       opacity: 0;
-    }
   }
-  
-  .slideUp {
-    animation: slideUp 1s ease-in-out forwards; /* Smooth sliding up transition */
-  }
-  
-  .slideDown {
-    animation: slideDown 1s ease-in-out forwards; /* Smooth sliding down transition */
-  }
-  
+}
+
+.slideUp {
+  animation: slideUp 1s ease-in-out forwards; /* Smooth sliding up transition */
+}
+
+.slideDown {
+  animation: slideDown 1s ease-in-out forwards; /* Smooth sliding down transition */
+}
+
+

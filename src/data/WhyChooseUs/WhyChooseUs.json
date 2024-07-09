@@ -4,41 +4,41 @@
     "src": "/assets/WhyChooseUs/PRODUCTION.png",
     "alt": "PRODUCTIONIMG",
     "title": "PRODUCTION",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsam mollitia quia blanditiis quis nemo molestiae in beatae vero, expedita culpa cumque voluptatem aperiam atque impedit aspernatur perferendis ab ex quo provident suscipit eos temporibus. Nisi, ea, ipsum at saepe illum, animi velit aliquid ipsa doloribus minus ullam est cupiditate?"
+    "description": "At Shiv Shakti Hatcheries, we pride ourselves on maintaining optimal production standards. With our state-of-the-art facilities and stringent quality control, we ensure a steady supply of healthy broiler chickens."
   },
   {
     "id": 2,
     "src": "/assets/WhyChooseUs/QUALITY.png",
     "alt": "QUALITYIMG",
     "title": "QUALITY",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsam mollitia quia blanditiis quis nemo molestiae in beatae vero, expedita culpa cumque voluptatem aperiam atque impedit aspernatur perferendis ab ex quo provident suscipit eos temporibus. Nisi, ea, ipsum at saepe illum, animi velit aliquid ipsa doloribus minus ullam est cupiditate?"
+    "description": "Quality is at the core of everything we do. From the feed to the final product, our commitment to excellence guarantees that our broiler chickens meet the highest standards of health and nutrition."
   },
   {
     "id": 3,
     "src": "/assets/WhyChooseUs/RATING.png",
     "alt": "RATINGIMG",
     "title": "RATING",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsam mollitia quia blanditiis quis nemo molestiae in beatae vero, expedita culpa cumque voluptatem aperiam atque impedit aspernatur perferendis ab ex quo provident suscipit eos temporibus. Nisi, ea, ipsum at saepe illum, animi velit aliquid ipsa doloribus minus ullam est cupiditate?"
+    "description": "Our consistent high ratings are a testament to our dedication to quality and customer satisfaction. We strive to exceed expectations in every aspect of our operations."
   },
   {
     "id": 4,
     "src": "/assets/WhyChooseUs/RETAIL.png",
     "alt": "RETAILIMG",
     "title": "RETAIL",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsam mollitia quia blanditiis quis nemo molestiae in beatae vero, expedita culpa cumque voluptatem aperiam atque impedit aspernatur perferendis ab ex quo provident suscipit eos temporibus. Nisi, ea, ipsum at saepe illum, animi velit aliquid ipsa doloribus minus ullam est cupiditate?"
+    "description": "We offer a seamless retail experience with our range of high-quality broiler chickens. Our products are trusted by retailers and customers alike for their superior taste and quality."
   },
   {
     "id": 5,
     "src": "/assets/WhyChooseUs/SURCING.png",
     "alt": "SURCINGIMG",
-    "title": "SURCING",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsam mollitia quia blanditiis quis nemo molestiae in beatae vero, expedita culpa cumque voluptatem aperiam atque impedit aspernatur perferendis ab ex quo provident suscipit eos temporibus. Nisi, ea, ipsum at saepe illum, animi velit aliquid ipsa doloribus minus ullam est cupiditate?"
+    "title": "SOURCING",
+    "description": "Our sourcing practices are designed to ensure the highest quality. We use COBB 430 eggs from Vencobb parent birds to maintain the genetic purity and health of our broiler chickens."
   },
   {
     "id": 6,
     "src": "/assets/WhyChooseUs/TRANS.png",
     "alt": "TRANPORTING",
     "title": "TRANSPORTATION",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsam mollitia quia blanditiis quis nemo molestiae in beatae vero, expedita culpa cumque voluptatem aperiam atque impedit aspernatur perferendis ab ex quo provident suscipit eos temporibus. Nisi, ea, ipsum at saepe illum, animi velit aliquid ipsa doloribus minus ullam est cupiditate?"
+    "description": "We ensure timely and safe transportation of our products with our reliable logistics network. Our transportation system is designed to maintain the health and quality of our broiler chickens from farm to market."
   }
 ]

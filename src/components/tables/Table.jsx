@@ -7,10 +7,10 @@ const Table = () => {
                 <thead>
                     <tr className="bg-brown-900 text-white uppercase text-sm leading-normal">
                         <th className="py-3 px-4 text-left">Days</th>
-                        <th className="py-3 px-4 text-left">Mortality</th>
+                        <th className="py-3 px-4 text-left">Mortality(%)</th>
                         <th className="py-3 px-4 text-left">Weight (gm)</th>
                         <th className="py-3 px-4 text-left">Feed (gm)</th>
-                        <th className="py-3 px-4 text-left">FCR</th>
+                        <th className="py-3 px-4 text-left">FCR </th>
                     </tr>
                 </thead>
                 <tbody className="text-black text-sm font-light">

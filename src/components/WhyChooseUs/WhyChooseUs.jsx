@@ -28,7 +28,7 @@ export const WhyChooseUs = () => {
         {featureData.map((feature, index) => (
           <div
             key={index}
-            className={`transition-opacity transition-transform duration-500 mx-2 ${index === currentFeature ? 'opacity-100 transform scale-110' : 'opacity-50'}`}
+            className={` transition-transform duration-500 mx-2 ${index === currentFeature ? 'opacity-100 transform scale-110' : 'opacity-50'}`}
           >
             <img src={feature.src} alt={feature.alt} className="w-24 h-24" />
           </div>

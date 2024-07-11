@@ -33,12 +33,12 @@ export const About = () => {
 
         <div className="flex flex-wrap justify-center gap-8 mt-8">
           <img
-            src="/assets/Home/AB-01.png"
+            src="/assets/Home/AB-03.png"
             alt="Image 1"
             className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-lg border-4 border-brown"
           />
           <img
-            src="/assets/Home/AB-02.png"
+            src="/assets/Home/AB-01.png"
             alt="Image 2"
             className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-lg border-4 border-brown"
           />
